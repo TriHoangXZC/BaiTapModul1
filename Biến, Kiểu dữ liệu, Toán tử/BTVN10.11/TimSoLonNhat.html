@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1= +prompt('So thu nhat')
+    let number2= +prompt('So thu hai')
+    let number3= +prompt('So thu ba')
+
+    if (number1 === number2 && number1 === number3) {
+        alert('Ba số bằng nhau:' + number1);
+    } else if(number1 == number2) {
+        if (number1 > number3) {
+            alert('Số lớn nhất là thứ 1 và thứ 2:' + number1);
+        } else {
+            alert('Số lớn nhất là thứ 3:' + number3);
+        }
+    } else if (number1 > number2) {
+        if (number1 == number3){
+            alert('Số lớn nhất là thứ 1 và thứ 3:' + number1);
+        } else if (number1 > number3) {
+            alert('Số lớn nhất là thu 1:' + number1);
+        } else {
+            alert('Số lớn nhất là thứ 3:' + number3);
+        }
+    } else{
+        if (number2 == number3){
+            alert('Số lớn nhất là số thứ 2 và số thứ 3:' + number2);
+        } else if(number2 > number3){
+        alert('Số lớn nhất là số thứ 2:' + number2);
+        } else{
+        alert('Số lớn nhất là số thứ 3:' + number3);
+    }
+    }
+</script>
+
+</body>
+</html>
