@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhap he so a");
+    let b = prompt("Nhap he so b");
+    let c = prompt("Nhap he so c");
+     if(a == 0 ){
+         if(b == 0){
+             if(c == 0){
+                 alert('Phuong trinh co vo so nghiem')
+             }else{
+                 alert('Phuong trinh vo nghiem')
+             }
+         }else{ let x=- c / b
+             alert('Phuong trinh co 1 nghiem x'+ x)
+         }
+     } let delta=(b * b) - (4 * a * c)
+     if(delta >= 0){
+        if(delta == 0){
+            let x=(- b) / (2 * a)
+            alert('Phuong trinh co nghiem kep x'+ x)
+        } else{
+            let x1=(- b + Math.sqrt(delta))/(2 * a)
+            let x2=(- b - Math.sqrt(delta))/(2 * a)
+            alert('Phuong trinh co 2 nghiem x1= '+ x1 +'Phuong trinh co nghiem x2= '+ x2)
+        }
+    }else{
+        alert('Phuong trinh vo nghiem')
+    }
+
+</script>
+</body>
+</html>
