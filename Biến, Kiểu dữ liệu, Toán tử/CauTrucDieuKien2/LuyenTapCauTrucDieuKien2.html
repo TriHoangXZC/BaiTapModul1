@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bai 1: Chuyển độ C sang độ F-->
+<!--<script>-->
+<!--    let độC = parseFloat(prompt('Nhập vào độ C '))-->
+<!--    let độF = ( độC * 9/5 ) + 32-->
+<!--    document.write('Độ F là ' + độF)-->
+<!--</script>-->
+
+<!--Bai 2: Chuyển từ m sang feet-->
+<!--<script>-->
+<!--    let m = parseFloat(prompt('Nhập vào m'))-->
+<!--    let feet = m * 3.2808-->
+<!--    document.write('Số feet là ' + feet)-->
+<!--</script>-->
+
+<!--Bai 3: Tính diện tích hình vuông khi biết cạnh a-->
+<!--<script>-->
+<!--    let canha = prompt('Nhập vào cạnh a (đơn vị cm)')-->
+<!--    let dienTich = canha ** 2-->
+<!--    document.write('Diện tích hình vuông có cạnh ' + canha + ' là ' + dienTich)-->
+<!--</script>-->
+
+<!--Bai 4: Tính diện tích hình chữ nhật khi biết 2 cạnh a, b-->
+<!--<input type="text" id="canha" value="">-->
+<!--<input type="text" id="canhb" value="">-->
+<!--<h2 id="result">Result</h2>-->
+<!--<button onclick="display()">Convert</button>-->
+<!--<script>-->
+<!--    function display() {-->
+<!--        let canha = document.getElementById('canha').value-->
+<!--        let canhb = document.getElementById('canhb').value-->
+<!--        // let dienTich = canha * canhb-->
+<!--        document.getElementById("result").innerHTML = 'Diện tích hình chữ nhật là ' + canha * canhb ;-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bai 5: Tính diện tích tam giác vuông khi biết 2 cạnh kề a, b-->
+<!--<input type="text" id="canha">-->
+<!--<input type="text" id="canhb">-->
+<!--<button onclick="display()">Convert</button>-->
+<!--<h2 id="result">Result</h2>-->
+<!--<script>-->
+<!--    function display(){-->
+<!--        let canha = document.getElementById('canha').value-->
+<!--        let canhb = document.getElementById('canhb').value-->
+<!--        document.getElementById('result').innerHTML = 'Diện tích tam giác vuông là ' + (canha * canhb) / 2;-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 6: Giải phương trình bậc 1-->
+
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td><label for="number1">Nhập hệ số a</label></td>-->
+<!--        <td><label for="number2">Nhập hệ số b</label></td>-->
+<!--        <td></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><input type="text" id="number1" value=""></td>-->
+<!--        <td><input type="text" id="number2" value=""></td>-->
+<!--        <td>-->
+<!--            <button type="button" onclick="display()">Convert</button>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<h2 id="result">Result</h2>-->
+<!--<script>-->
+<!--    function display() {-->
+<!--        hesoa = document.getElementById('number1').value-->
+<!--        hesob = document.getElementById('number2').value-->
+<!--        if (hesoa === 0 && hesob === 0) {-->
+<!--            document.getElementById('result').innerText = 'Phương trình có vô số nghiệm';-->
+<!--        } else if (hesoa === 0) {-->
+<!--            if (hesob < 0 || hesob > 0) {-->
+<!--                document.getElementById('result').innerText = "Phương trình vô nghiệm";-->
+<!--            }-->
+<!--        } else (hesoa > 0 || hesoa < 0)-->
+<!--        {-->
+<!--            document.getElementById('result').innerText = "Phương trình có nghiệm x là " + (-hesob) / hesoa;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 7: Giải phương trình bậc 2-->
+<!--<script>-->
+<!--    let number1 = +prompt('Nhap so thu nhat: ');-->
+<!--    let number2 = +prompt('Nhap so thu hai: ');-->
+<!--    let number3 = +prompt('Nhap so thu ba: ');-->
+<!--    let delta = (number2 ** 2) - (4 * number1 * number3);-->
+<!--    if (number1 === 0) {-->
+<!--        if (number2 === 0) {-->
+<!--            if (number3 === 0) {-->
+<!--                alert('Phuong trinh vo so nghiem');-->
+<!--            } else {-->
+<!--                alert('Phuong trinh vo nghiem');-->
+<!--            }-->
+<!--        } else {-->
+<!--            let x = -(number3 / number2).toFixed(4);-->
+<!--            alert('Phuong trinh co nghiem la: ' + x);-->
+<!--        }-->
+<!--    } else if (delta > 0) {-->
+<!--        let x1 = ((-number2 + Math.sqrt(delta)) / (2 * number1)).toFixed(4);-->
+<!--        let x2 = ((-number2 - Math.sqrt(delta)) / (2 * number1)).toFixed(4);-->
+<!--        alert('Phuong trinh co 2 nghiem la: ' + x1 + ' va  ' + x2);-->
+<!--    } else if (delta === 0) {-->
+<!--        let x = ((-number2) / (2 * number1)).toFixed(4);-->
+<!--        alert('Phuong trinh co nghiem kep la: ' + x);-->
+<!--    } else {-->
+<!--        alert('Phuong trinh vo nghiem');-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 8: Kiểm tra tuổi người-->
+
+<!--<script>-->
+<!--    let age = +prompt('Nhập số')-->
+<!--    if (age > 0 && age < 120) {-->
+<!--        alert(age + ' là tuổi của người')-->
+<!--    } else {-->
+<!--        alert(age + ' không là tuổi của người')-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 9: Kiểm tra 3 số thực (a, b, c) có phải là 3 cạnh tam giác-->
+
+<!--<script>-->
+<!--    let number1 = parseFloat(prompt('Nhập vào số thực 1'))-->
+<!--    let number2 = parseFloat(prompt('Nhập vào số thực 2'))-->
+<!--    let number3 = parseFloat(prompt('Nhập vào số thực 3'))-->
+<!--    if (number1 > 0 && number2 > 0 && number3 > 0) {-->
+<!--        if (number1 + number2 > number3 && number1 + number3 > number2 && number2 + number3 > number1) {-->
+<!--            alert('3 số vừa nhập là 3 cạnh tam giác');-->
+<!--        } else {-->
+<!--            alert('3 số vừa nhập không phải là cạnh của tam giác');-->
+<!--        }-->
+<!--    } else {-->
+<!--        alert('3 số vừa nhập không phải là cạnh của tam giác');-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 10: Viết chương trình tính giá điện-->
+<!--<script>-->
+<!--    let kw = +prompt('Nhập số điện năng tiêu thụ')-->
+<!--    if (kw <= 50) {-->
+<!--        alert('Số tiền phải trả là ' + kw * 1000);-->
+<!--    } else if (kw <= 100) {-->
+<!--        alert('Số tiền phải trả là ' + (50 * 1000 + (kw - 50) * 2000));-->
+<!--    } else if (kw <= 200) {-->
+<!--        alert('Số tiền phải trả là ' + (50 * 1000 + 50 * 2000 + (kw - 100) * 3000));-->
+<!--    } else {-->
+<!--        alert('Số tiền phải trả là ' + (50 * 1000 + 50 * 2000 + 100 * 3000 + (kw - 200) * 4000));-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 11: Viết chương trình tính thuế thu nhập cá nhân-->
+
+<!--<script>-->
+<!--    let thuNhapThang = parseFloat(prompt('Nhập số tiền thu nhập 1 tháng: '))-->
+<!--    if (thuNhapThang > 0) {-->
+<!--        if (thuNhapThang < 5000000) {-->
+<!--            alert('Thuế thu nhập cá nhân là: ' + thuNhapThang * 5 / 100);-->
+<!--        } else if (thuNhapThang < 10000000) {-->
+<!--            alert('Thuế thu nhập cá nhân là: ' + thuNhapThang * 10 / 100);-->
+<!--        } else if (thuNhapThang < 18000000) {-->
+<!--            alert('Thuế thu nhập cá nhân là: ' + thuNhapThang * 15 / 100);-->
+<!--        } else if (thuNhapThang < 32000000) {-->
+<!--            alert('Thuế thu nhập cá nhân là: ' + thuNhapThang * 20 / 100);-->
+<!--        } else if (thuNhapThang < 52000000) {-->
+<!--            alert('Thuế thu nhập cá nhân là: ' + thuNhapThang * 25 / 100);-->
+<!--        } else if (thuNhapThang < 80000000) {-->
+<!--            alert('Thuế thu nhập cá nhân là: ' + thuNhapThang * 30 / 100);-->
+<!--        } else {-->
+<!--            alert('Thuế thu nhập cá nhân là: ' + thuNhapThang * 35 / 100);-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 12: Viết chương trình tính lãi ngân hàng-->
+
+<!--<script>-->
+<!--    let tienGui= +prompt('Nhập số tiền gửi: ');-->
+<!--    let namGui= +prompt('Nhập số năm gửi: ');-->
+<!--    let laiGui= +prompt('Nhập lãi suất hàng năm: ');-->
+
+<!--    if (tienGui > 0 && namGui > 0 && laiGui > 0) {-->
+<!--        alert('Tiền gốc và lãi là: '+ (tienGui * ((1 + laiGui) ** namGui)));-->
+<!--    }else {-->
+<!--        alert('Nhập lại!!');-->
+<!--    }-->
+<!--</script>-->
+</body>
+</html>
