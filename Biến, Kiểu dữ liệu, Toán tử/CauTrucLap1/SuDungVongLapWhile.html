@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1: Nhập vào 1 số từ hộp thoại, việc nhập kết thúc khi người dùng nhập -1. Mỗi giá trị nhập sẽ được hiển thị ra và thực hiện tính tổng-->
+<!--<p id="display"></p>-->
+<!--<script>-->
+<!--    let number = +prompt('Nhập vào số bất kì, nhập -1 để kết thúc')-->
+<!--    let sum = 0-->
+<!--    while (number !== (-1)){-->
+<!--        document.getElementById('display').innerHTML += number + '<br/>';-->
+<!--        sum += number;-->
+<!--        number = +prompt('Nhập vào số bất kì, nhập -1 để kết thúc');-->
+<!--    }-->
+<!--    document.getElementById('display').innerHTML += 'Tổng các số đã nhập '+ sum + '<br/>';-->
+<!--</script>-->
+
+<!--<p id="display"></p>-->
+<!--<script>-->
+<!--    let number = parseInt(prompt("Nhập 1 số bất kì. Nhập -1 để kết thúc"));-->
+<!--    let sum = 0;-->
+<!--    while (number !== (-1)) {-->
+<!--        document.getElementById('display').innerHTML += number + '</br>';-->
+<!--        sum += number;-->
+<!--        number = parseInt(prompt("Nhập 1 số bất kì. Nhập -1 để kết thúc"));-->
+<!--    }-->
+<!--    document.getElementById('display').innerHTML += 'Tổng các số đã nhập: ' + sum + '</br>';-->
+<!--</script>-->
+
+<!--Bài 2: Viết chương trình hiển thị thẻ <hr> độ rộng từ 1 đến 100-->
+
+<script>
+    let i = 1;
+    let width = "<hr width = " + i + "%>";
+    while (i <= 100) {
+        width = width + '<hr width = ' + i + '%>';
+        i++;
+    }
+    document.write(width);
+</script>
+
+</body>
+</html>
