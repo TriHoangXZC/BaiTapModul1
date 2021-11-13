@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài : Sử dụng vòng lặp do-while để viết lại chương trình yêu cầu nhập vào các số từ 1 - 10-->
+<!--In ra dãy số từ 1 -> 10-->
+<!--<p id="text"></p>-->
+<!--<script>-->
+<!--    let i = 1;-->
+<!--    let text = "";-->
+<!--    do { text += 'The number is ' + i + '<br>';-->
+<!--        i++;-->
+<!--        document.getElementById('text').innerHTML = text-->
+<!--    } while (i <= 10)-->
+<!--</script>-->
+
+<script>
+    let value = null;
+    do {
+        value = +prompt("Nhập vào số từ 1 -> 10");
+    } while (value < 1 || value > 10);
+    alert("Số bạn vừa nhập là " + value);
+</script>
+</body>
+</html>
