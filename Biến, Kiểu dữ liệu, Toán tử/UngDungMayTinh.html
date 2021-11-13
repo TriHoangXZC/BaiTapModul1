@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Calculator</h2>
+<table>
+    <tr>
+        <td colspan="2"><lable><input type="text" id="number1"></lable></td>
+        <td colspan="2"><label><input type="text" id="number2"></label></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="add()">Additon(+)</button>
+        </td>
+        <td>
+            <button onclick="sub()">Subtraction(-)</button>
+        </td>
+        <td>
+            <button onclick="multi()">Multiplication(x)</button>
+        </td>
+        <td>
+            <button onclick="div()">Division(/)</button>
+        </td>
+    </tr>
+</table>
+<h2 id="result">Result</h2>
+<script>
+    function add(){
+        let number1 = +document.getElementById('number1').value
+        let number2 = +document.getElementById('number2').value
+        document.getElementById('result').innerText = number1 + number2
+    }
+    function sub(){
+        let number1 = +document.getElementById('number1').value
+        let number2 = +document.getElementById('number2').value
+        document.getElementById('result').innerText = number1 - number2
+    }
+    function multi(){
+        let number1 = +document.getElementById('number1').value
+        let number2 = +document.getElementById('number2').value
+        document.getElementById('result').innerText = number1 *number2
+    }
+    function div(){
+        let number1 = +document.getElementById('number1').value
+        let number2 = +document.getElementById('number2').value
+        document.getElementById('result').innerText = number1 / number2
+    }
+
+</script>
+</body>
+</html>
