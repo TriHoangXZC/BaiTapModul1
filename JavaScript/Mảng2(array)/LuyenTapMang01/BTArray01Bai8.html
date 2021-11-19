@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 8: Viết chương trình khởi tạo mảng 10 phần tử. Chương trình sắp xếp theo thứ tự giảm dần và hiển thị ra mảng đã sắp xếp-->
+<script>
+    let num = +prompt('Nhập vào số phần tử của mảng');
+    let array = new Array(num);
+    for (i=0; i < array.length; i++) {
+        array[i] = +prompt('Nhập vào phần tử thứ ' + (i + 1) + ':');
+    }
+    array.sort(function(a,b) {
+        return b - a
+    })
+    document.write(array);
+</script>
+</body>
+</html>

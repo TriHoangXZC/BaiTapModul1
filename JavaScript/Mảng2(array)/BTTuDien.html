@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id="input"></label>
+<button onclick="display()">Translate</button>
+<h2 id="result"></h2>
+<script>
+    let arrayVne = ["ngôi nhà", "trường học", "tạm biệt", "xin chào"]
+    let arrayEng = ["house", "school", "bye", "hello"]
+
+    function display() {
+        let wordInput = document.getElementById('input').value
+        let index = 0
+        let flag = false
+        for (let i = 0; i < arrayEng.length; i++) {
+            if (wordInput === arrayEng[i]) {
+                flag = true
+                index = arrayVne[i]
+                break
+            }
+            if (wordInput === arrayVne[i]) {
+                flag = true
+                index = arrayEng[i]
+                break
+            }
+        }
+        if (flag) {
+            document.getElementById('result').innerHTML = 'Kết quả: ' + index
+        } else {
+            document.getElementById('result').innerHTML = ''
+            alert('Không tìm thấy!!!')
+        }
+    }
+</script>
+
+
+
+</body>
+</html>

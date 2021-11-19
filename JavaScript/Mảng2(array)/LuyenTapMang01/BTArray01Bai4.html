@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 4: Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó-->
+<script>
+    let num = +prompt('Nhập vào số lượng phần tử trong mảng: ');
+    let array = new Array(num);
+    for (i = 0; i < array.length; i++) {
+        array[i] = +prompt('Nhập vào phần tử thứ ' + (i + 1) + '');
+    } document.write(array.reverse());
+</script>
+</body>
+</html>

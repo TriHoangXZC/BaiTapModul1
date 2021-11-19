@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 7: Viết chương trình khởi tạo nhập vào 1 mảng số nguyên 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xóa V khỏi bảng, gán 0 cho phần tử cuối cùng của mảng-->
+<!--isNaN(): trả về true khi giá trị truyền vào là chuỗi, false khi giá trị truyền vào là số -->
+<script>
+    let number = +prompt('Nhập vào số lượng phần tử:');
+    let array = new Array(number);
+    for (i = 0; i < array.length; i++) {
+        array[i] = +prompt('Nhập vào phần tử thứ ' + (i + 1) + ':');
+    }
+    let numberInput = +prompt('Nhập vào giá trị muốn kiểm tra:');
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === numberInput) {
+            array.splice(i,1);
+            array.push(0);
+            i--;
+            // for (let j = i; j < array.length -1; j++ ) {
+            //     array[j] = array[j + 1]
+            // }
+            // array[array.length -1] = 0
+            // i--;
+        }
+    }
+    console.log(array)
+</script>
+</body>
+</html>

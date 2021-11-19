@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài: Hiển thị 20 số nguyên tố đầu tiên-->
+<script>
+    let number = parseInt(prompt('Nhập số lượng số nguyên tố cần in'));
+    let count = 0;
+    let N = 2;
+    let data = '';
+    for (let count = 0; count < number;) {
+        let check = true;
+        for (let i = 2; i < N; i++) {
+            if (N % i === 0) {
+                check = false;
+                break;
+            }
+        }
+        if (check) {
+            data += N + '' + '<br>';
+            count++;
+        }
+        N++;
+    }
+    document.write(data);
+</script>
+</body>
+</html>

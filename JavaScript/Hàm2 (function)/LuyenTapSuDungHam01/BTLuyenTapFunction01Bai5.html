@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulur'];
+  let array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+  let input = prompt('Nhập vào tên ngôi sao: ');
+  findStar(input);
+  function findStar(starName) {
+    let check = false;
+    for (let i = 0; i < array1.length; i++) {
+      if(starName === array1[i]) {
+        alert('Chòm sao: ' + array2[i]);
+        return true;
+      }
+    }
+    if (!check) {
+      alert('Không có tên ngôi sao trong mảng!')
+    }
+  }
+  // if (findStar(input)) {
+  //   alert('Chòm sao: ' + array2[i]);
+  // } else {
+  //   alert('Không có tên ngôi sao trong mảng!')
+  // }
+</script>
+
+</body>
+</html>

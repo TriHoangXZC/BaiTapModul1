@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 5: Viết chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem chuỗi có giống nhau hay không?-->
+<script>
+    let number = +prompt('Nhập vào số lượng phần tử chuỗi thứ nhất: ');
+    let array = new Array(number);
+    for (i = 0; i < array.length; i++) {
+        array[i] = +prompt('Nhập vào phần tử thứ: ' + (i + 1) + ' : ')
+    }
+    let number1 = +prompt('Nhập vào số lượng phần tử chuỗi thứ 2: ');
+    let array1 = new Array(number1);
+    for (i = 0; i < array1.length; i++) {
+        array1[i] = +prompt('Nhập vào phần tử thứ: ' + (i + 1) + ' : ')
+    }
+    let flag = false;
+    for (i = 0; i < array.length; i++) {
+        if (array[i] === array1[i]) {
+            flag = true;
+            break;
+        }
+        else {
+            flag = false;
+            break;
+        }
+    }
+    if (flag) {
+        alert('2 chuỗi giống nhau');
+    } else {
+        alert('2 chuỗi khác nhau');
+    }
+</script>
+</body>
+</html>

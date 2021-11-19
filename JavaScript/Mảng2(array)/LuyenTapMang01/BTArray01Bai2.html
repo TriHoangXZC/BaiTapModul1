@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 2: Viết program khởi tạo mảng số nguyên gồm 10 phần tử khác nhau. Hiển thị ra phần tử lớn nhất và vị trí của phần tử đó-->
+<script>
+  let num = +prompt('Nhập vào số lượng phần tử của mảng: ');
+  let array = new Array(num);
+  let index = 0;
+  let max = '';
+  for (let i = 0; i < array.length; i++) {
+    array[i] = +prompt('Nhập vào phần tử thứ: ' + (i + 1) + '');
+    max = array[0]
+    if (max < array[i]) {
+      max = array[i];
+      index = i;
+    }
+
+  }
+  alert('Max ' + max + ' at position ' + index);
+</script>
+
+</body>
+</html>

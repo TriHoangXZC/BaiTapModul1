@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 9: Viết chương trình khởi tạo 2 mảng số nguyên gồm 10 phần tử, gọi mảng a và b. Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên. Chương trình lưu các phần tử được nối từ hai mảng a và b vào mảng c. Hiển thị mảng c-->
+<script>
+    let num1 = +prompt('Nhập vào số lượng phần tử dãy a:');
+    let array1 = new Array(num1);
+    for (i = 0; i < array1.length; i++) {
+        array1[i] = +prompt('Nhập vào phần tử thứ ' + (i + 1) + ':');
+    }
+    let num2 = +prompt('Nhập vào số lượng phần tử dãy b:');
+    let array2 = new Array(num2);
+    for (j = 0; j < array1.length; j++) {
+        array2[j] = +prompt('Nhập vào phần tử thứ ' + (j + 1) + ':');
+    }
+    let c = array1.concat(array2);
+    alert(c);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 6: Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử, nhập vào phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng thì in "V is in the array", nếu không in "V is not in the array"-->
+<!--Dùng cắm cờ (flag)-->
+<script>
+    let num = +prompt('Nhập vào số lượng phần tử:');
+    let array = new Array(num);
+    let flag = false;
+    for (i = 0; i < array.length; i++) {
+        array[i] = +prompt('Nhập vào phần tử thứ ' + (i + 1) + ':');
+    }
+    let value = +prompt('Input a number: ');
+    for (let i = 0; i < array.length; i++) {
+        if (value === array[i]) {
+            flag = true;
+            break;
+        }
+    }
+    if (flag) {
+        alert('V is in the array');
+    } else {
+        alert('V is ont in the array');
+    }
+
+</script>
+</body>
+</html>
