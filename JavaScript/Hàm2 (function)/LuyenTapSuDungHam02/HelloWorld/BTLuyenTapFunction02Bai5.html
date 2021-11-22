@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 5: Nhập vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất-->
+<script>
+    function findMin(num1, num2, num3) {
+        if (num1 === num3 && num1 === num3) {
+            return num1;
+        }
+        else if (num1 === num2) {
+            if (num1 < num3) {
+                return num1;
+            }
+            else {
+                return num3;
+            }
+        }
+        else if (num1 > num2) {
+            if (num2 === num3) {
+                return num2;
+            }
+            else if (num2 > num3) {
+                return num3;
+            }
+            else {
+                return num2;
+            }
+        }
+        else if (num1 === num3) {
+            return num1;
+        }
+        else if (num1 < num3) {
+            return num1;
+        }
+        else {
+            return num3;
+        }
+    }
+    let number1 = +prompt('Input number1');
+    let number2 = +prompt('Input number2');
+    let number3 = +prompt('Input number3');
+    document.write('Số bé nhất là trong 3 số là: ' + findMin(number1, number2, number3));
+
+    // let number1 = +prompt("Nhập vào số thứ nhất: ");
+    // let number2 = +prompt("Nhập vào số thứ hai: ");
+    // let number3 = +prompt("Nhập vào số thứ ba: ");
+    //
+    // function findMin(num1, num2, num3) {
+    //     let min = num1;
+    //     if (min > num2) {
+    //         min = num2;
+    //     }
+    //     if (min > num3) {
+    //         min = num3;
+    //     }
+    //     return min;
+    // }
+    //
+    // alert("Số nhỏ nhất trong 3 số là: " + findMin(number1, number2, number3))
+</script>
+</body>
+</html>

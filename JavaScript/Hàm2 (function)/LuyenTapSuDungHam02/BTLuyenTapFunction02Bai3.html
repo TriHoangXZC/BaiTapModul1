@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 3: Viết hàm tính giai thừa của số nguyên bất kì-->
+<script>
+    function factorial(num) {
+        // if (num === 1 || num === 0) {
+        //     return 1;
+        // }
+        // else {
+        //     return num * factorial(num - 1);
+        // }
+        let fact = 1;
+        for (let i = 1; i <= num ; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+    let number = +prompt('Input number: ');
+    alert('Giai thừa của số ' + number + ' là: ' + factorial(number));
+</script>
+</body>
+</html>

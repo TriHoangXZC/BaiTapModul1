@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bai 1: Nối các phần tử trong mảng thành chuỗi-->
+<script>
+    let number = +prompt('Nhập vào số lượng phần tử: ');
+    let array = new Array(number);
+    for (i = 0; i < array.length; i++) {
+        array[i] = prompt('Nhập vào phần tử thứ ' + (i + 1) + ' :');
+    }
+    // let array = ['Red', 'Green', 'White', 'Black'];
+    // Cach 1 : toString()
+    console.log(array.toString())
+    // Cach 2: join()
+    console.log(array.join())
+
+</script>
+
+</body>
+</html>

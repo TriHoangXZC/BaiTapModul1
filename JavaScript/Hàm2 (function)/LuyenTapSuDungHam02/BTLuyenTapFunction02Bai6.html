@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 6: Viết hàm nhận 1 số, kiểm tra có phải số nguyên dương không. Nếu là nguyên dương trả về true, nếu không trả về false-->
+<script>
+    function isPositive(num) {
+        if (num > 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    let number = +prompt('Input number:');
+    document.write(isPositive(number));
+</script>
+</body>
+</html>

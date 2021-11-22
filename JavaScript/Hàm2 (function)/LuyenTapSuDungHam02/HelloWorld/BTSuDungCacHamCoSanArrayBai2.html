@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 2: Viết chương trình chèn dấu (-) giữa 2 số chẵn-->
+<script>
+    // number = +prompt('Nhập vào số lượng phần tử: ');
+    // let array = new Array(number);
+    // for (let i = 0; i < array.length; i++) {
+    //     array[i] = +prompt('Nhập vào phần tử thứ: ' + (i + 1) + ' :');
+    // }
+    // function isEven(array) {
+    //     for (let i = 1; i < array.length; i++) {
+    //         if (array[i - 1] % 2 === 0 && array[i] % 2 === 0) {
+    //             return true
+    //         }
+    //         else {
+    //             return false
+    //         }
+    //     }
+    // }
+    //
+    // function add() {
+    //     for (let i = 0; i < array.length; i++) {
+    //         if (isEven(array)) {
+    //             array.join('-')
+    //         }
+    //     }
+    // }
+    //
+    // console.log(add(array.join()));
+    // Cach 2:
+    const num = window.prompt();
+    const str = num.toString();
+    const result = [str[0]];
+    for (let x = 1; x < str.length; x++) {
+        if((str[x-1] % 2 === 0) && (str[x] % 2 === 0))
+        {
+            result.push('-', str[x]);
+        } else {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>

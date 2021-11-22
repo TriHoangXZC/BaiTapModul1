@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn.Gọi hàm vừa xây dựng-->
+<script>
+  function areaCircle(rad) {
+    return rad ** 2 * Math.PI;
+  }
+  function perimeterCircle(rad) {
+      return rad * 2 * Math.PI;
+  }
+  let radius = +prompt('Nhập vào bán kính hình tròn: ')
+  alert('Hình tròn có bán kính ' + radius +  ' có diện tích là:' + areaCircle(radius) + '; Có chu vi là: ' + perimeterCircle(radius));
+</script>
+</body>
+</html>

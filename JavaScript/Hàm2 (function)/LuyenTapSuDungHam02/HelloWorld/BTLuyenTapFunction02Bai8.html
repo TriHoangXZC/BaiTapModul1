@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 8: Viết hàm truyền vào mảng số nguyên bất kì, sau đó đảo ngược mảng số nguyên đó-->
+<script>
+    function swapArray(arr) {
+        return arr.reverse();
+    }
+    let number = +prompt('Nhap vao so luong phan tu:');
+    let array = new Array(number);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = +prompt('Nhap vao phan tu thu: ' + (i + 1) + ' :');
+    }
+    console.log(swapArray(array));
+</script>
+</body>
+</html>
