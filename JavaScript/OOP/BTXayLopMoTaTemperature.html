@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Temperature {
+    tempC
+
+      constructor(tempC) {
+        this.tempC = tempC;
+      }
+
+      getTempC() {
+        return this.tempC;
+      }
+
+      setTempC(tempC) {
+        this.tempC = tempC;
+      }
+
+      changeCToF() {
+        return this.tempC * 9 / 5 + 32;
+      }
+
+      changeCToK() {
+        return this.tempC + 273.15;
+      }
+  }
+  let tempC = new Temperature(25);
+  alert('25 doC bang: ' + tempC.changeCToF() + ' doF; ' + tempC.changeCToK() + ' doK')
+</script>
+</body>
+</html>

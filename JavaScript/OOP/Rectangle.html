@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="800" height="500" style="border: 1px solid black"></canvas>
+<script>
+    class Rectangle {
+        width
+        height
+        color
+
+        constructor(width, height, color) {
+            this.width = width;
+            this.height = height;
+            this.color = color;
+        }
+
+        // getWidth() {
+        //     return this.width;
+        // }
+        //
+        // setWidth(width) {
+        //     this.width = width;
+        // }
+        //
+        // getHeight() {
+        //     return this.height;
+        // }
+        //
+        // setHeight(height) {
+        //     this.height = height;
+        // }
+
+        getArea() {
+            return this.width * this.height;
+        }
+
+        getPerimeter() {
+            return (this.width + this.height) * 2;
+        }
+
+        draw(ctx) {
+            ctx.beginPath();
+            ctx.fillStyle = this.color;
+            ctx.fillRect(200, 200, this.width, this.height);
+            // ctx.fill()
+            // ctx.stroke();
+            ctx.closePath();
+        }
+    }
+
+    let rec = new Rectangle(300, 2000, 'green');
+    let ctx = document.getElementById('canvas').getContext('2d');
+    rec.draw(ctx)
+    alert('Dien tich: ' + rec.getArea() + '; chu vi: ' + rec.getPerimeter());
+</script>
+
+</body>
+</html>

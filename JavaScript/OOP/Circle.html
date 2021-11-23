@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="800" height="500" style="border: 1px solid black"></canvas>
+<script>
+    class Circle {
+        radius
+        color
+
+        constructor(radius, color) {
+            this.radius = radius;
+            this.color = color;
+        }
+
+        getRadius() {
+            return this.radius;
+        }
+
+        setRadius(radius) {
+            this.radius = radius;
+        }
+
+        area() {
+            return this.radius ** 2 * Math.PI;
+        }
+
+        perimeter() {
+            return this.radius * 2 * Math.PI;
+        }
+
+        draw(ctx) {
+            ctx.beginPath();
+            ctx.fillStyle = this.color;
+            ctx.arc(200, 200, this.radius, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.closePath();
+        }
+    }
+    let circle = new Circle(100, 'aqua');
+    let ctx = document.getElementById('canvas').getContext('2d');
+    circle.draw(ctx);
+    alert('Dien tich hinh tron la: ' + circle.area() + ' ; Chu vi hinh tron la: ' + circle.perimeter());
+</script>
+</body>
+</html>
