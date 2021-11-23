@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result = new Array(0);
+    let count = 0;
+
+    function isPrime(num) {
+        if (num < 3) {
+            return false;
+        } else {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+
+            }
+            return true;
+        }
+    }
+
+    function add() {
+        for (i = 0; i < 8; i++) {
+            number = +prompt('Nhập vào số bất kì: ');
+            if (isPrime(number)) {
+                result.push(number)
+                // console.log(result)
+                alert(result)
+                // console.log(result.length === 5)
+                if (result.length === 5) {
+                    return result;
+                }
+            } else {
+                count++;
+                alert('Số lần nhập sai: ' + count)
+                if (count === 4) {
+                    result = new Array(0);
+                    // count = 0;
+                    return result;
+                }
+            }
+
+        }
+    }
+
+    document.write(add())
+
+</script>
+
+</body>
+</html>
