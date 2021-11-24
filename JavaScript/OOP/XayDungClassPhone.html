@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class MobilePhone {
+        name
+        battery
+
+        constructor(name, battery) {
+            this.name = name;
+            this.battery = battery;
+            this.draftsBox = [];
+            this.sendBox = [];
+            this.inBox = [];
+            this.status = false
+        }
+
+        // OnOffPhone
+        turnOnOff() {
+            return this.status = !this.status;
+        }
+
+        getStatus() {
+            return this.status;
+        }
+
+        // CheckBattery
+        checkBattery() {
+            return this.battery > 0 ? true : false;
+        }
+
+        chargeBattery(battery) {
+            return this.battery = battery;
+        }
+
+        // Cac chuc nang
+        // Soan tin nhan
+        setMess(message) {
+            if (this.checkBattery() && this.getStatus()) {
+                this.message = message;
+                this.draftsBox.push(message);
+                this.battery--;
+            }
+        }
+
+        // Nhan tin nha
+        getInbox(message) {
+            if (this.checkBattery() && this.getStatus()) {
+                this.inBox = this.inBox.concat(message);
+                this.battery--;
+            }
+        }
+
+        // Gui tin nhan
+        sendMess(phones) {
+            if (this.checkBattery() && this.getStatus()) {
+                this.battery--;
+                this.sendBox = this.sendBox.concat(this.draftsBox);
+                for (let i = 0; i < phones.length; i++) {
+                    phones[i].getInbox(this.draftsBox);
+                }
+                this.draftsBox = [];
+            }
+        }
+    }
+    let nokia = new MobilePhone('nokia', 100);
+    let iphone = new MobilePhone('iphone', 100);
+    let samsung = new MobilePhone('samsung', 100);
+    let xiaomi = new MobilePhone('xiaomi', 100);
+
+    let phones = [iphone, samsung, xiaomi]
+
+</script>
+
+</body>
